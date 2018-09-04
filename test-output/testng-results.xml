@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="11521" started-at="2018-09-04T11:19:16Z" finished-at="2018-09-04T11:19:27Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="11521" started-at="2018-09-04T11:19:16Z" finished-at="2018-09-04T11:19:27Z">
+      <class name="com.qait.automation.TatocPageObject.AppTest">
+        <test-method status="PASS" signature="openPage()[pri:0, instance:com.qait.automation.TatocPageObject.AppTest@5700d6b1]" name="openPage" is-config="true" duration-ms="2530" started-at="2018-09-04T16:49:16Z" finished-at="2018-09-04T16:49:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openPage -->
+        <test-method status="PASS" signature="LoginWithNullPasswordAndNullUserName()[pri:0, instance:com.qait.automation.TatocPageObject.AppTest@5700d6b1]" name="LoginWithNullPasswordAndNullUserName" duration-ms="292" started-at="2018-09-04T16:49:18Z" finished-at="2018-09-04T16:49:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithNullPasswordAndNullUserName -->
+        <test-method status="PASS" signature="LoginWithNullPasswordAndValidUserName()[pri:0, instance:com.qait.automation.TatocPageObject.AppTest@5700d6b1]" name="LoginWithNullPasswordAndValidUserName" duration-ms="259" started-at="2018-09-04T16:49:19Z" depends-on-methods="com.qait.automation.TatocPageObject.AppTest.LoginWithNullPasswordAndNullUserName" finished-at="2018-09-04T16:49:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithNullPasswordAndValidUserName -->
+        <test-method status="PASS" signature="LoginWithValidPasswordAndNullUserName()[pri:0, instance:com.qait.automation.TatocPageObject.AppTest@5700d6b1]" name="LoginWithValidPasswordAndNullUserName" duration-ms="217" started-at="2018-09-04T16:49:19Z" depends-on-methods="com.qait.automation.TatocPageObject.AppTest.LoginWithNullPasswordAndValidUserName" finished-at="2018-09-04T16:49:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithValidPasswordAndNullUserName -->
+        <test-method status="PASS" signature="LoginWithinvalidPasswordAndvalidUserName()[pri:0, instance:com.qait.automation.TatocPageObject.AppTest@5700d6b1]" name="LoginWithinvalidPasswordAndvalidUserName" duration-ms="548" started-at="2018-09-04T16:49:19Z" depends-on-methods="com.qait.automation.TatocPageObject.AppTest.LoginWithValidPasswordAndNullUserName" finished-at="2018-09-04T16:49:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithinvalidPasswordAndvalidUserName -->
+        <test-method status="PASS" signature="LoginWithvalidPasswordAndinvalidUserName()[pri:0, instance:com.qait.automation.TatocPageObject.AppTest@5700d6b1]" name="LoginWithvalidPasswordAndinvalidUserName" duration-ms="516" started-at="2018-09-04T16:49:20Z" depends-on-methods="com.qait.automation.TatocPageObject.AppTest.LoginWithinvalidPasswordAndvalidUserName" finished-at="2018-09-04T16:49:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithvalidPasswordAndinvalidUserName -->
+        <test-method status="PASS" signature="LoginWithvalidPasswordAndvalidUserName()[pri:0, instance:com.qait.automation.TatocPageObject.AppTest@5700d6b1]" name="LoginWithvalidPasswordAndvalidUserName" duration-ms="7140" started-at="2018-09-04T16:49:20Z" depends-on-methods="com.qait.automation.TatocPageObject.AppTest.LoginWithvalidPasswordAndinvalidUserName" finished-at="2018-09-04T16:49:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithvalidPasswordAndvalidUserName -->
+        <test-method status="PASS" signature="closePage()[pri:0, instance:com.qait.automation.TatocPageObject.AppTest@5700d6b1]" name="closePage" is-config="true" duration-ms="0" started-at="2018-09-04T16:49:27Z" finished-at="2018-09-04T16:49:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closePage -->
+      </class> <!-- com.qait.automation.TatocPageObject.AppTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
