@@ -16,10 +16,10 @@ public class AppTest {
 	DragAndDropActions drag_and_drop;
 	PopupWindowsActions popup_windows;
 	CookieActions cookie;
-
+        int i=0;
 	@BeforeClass
 	public void openPage() {
-		System.out.println("Uday kumar is a coder");
+		
 		String dir = System.getProperty("user.dir");
 		System.out.println(System.getProperty("user.dir"));
 		String chromedriver= "chromedriver";  		
@@ -44,6 +44,9 @@ public class AppTest {
 		  driver.findElement(By.cssSelector("#txtPassword")).sendKeys("");
 		  driver.findElement(By.cssSelector("[type=\"submit\"]")).click();
 		  Assert.assertTrue(true);
+		  if(true!=true) {
+			  i++;
+		  }
 	  }
 	  @Test(dependsOnMethods= {"LoginWithNullPasswordAndNullUserName"})
 	  public void LoginWithNullPasswordAndValidUserName() {
@@ -53,6 +56,9 @@ public class AppTest {
 		  driver.findElement(By.cssSelector("#txtPassword")).sendKeys("");
 		  driver.findElement(By.cssSelector("[type=\"submit\"]")).click();
 		  Assert.assertTrue(true);
+		  if(true!=true) {
+			  i++;
+		  }
 	  }
 	  @Test(dependsOnMethods= {"LoginWithNullPasswordAndValidUserName"})
 	  public void LoginWithValidPasswordAndNullUserName() {
@@ -62,6 +68,9 @@ public class AppTest {
 		  driver.findElement(By.cssSelector("#txtPassword")).sendKeys("Krishna@321#");
 		  driver.findElement(By.cssSelector("[type=\"submit\"]")).click();
 		  Assert.assertTrue(true);
+		  if(true!=true) {
+			  i++;
+		  }
 	  }
 	  @Test(dependsOnMethods= {"LoginWithValidPasswordAndNullUserName"})
 	  public void LoginWithinvalidPasswordAndvalidUserName() {
@@ -71,6 +80,9 @@ public class AppTest {
 		  driver.findElement(By.cssSelector("#txtPassword")).sendKeys("password");
 		  driver.findElement(By.cssSelector("[type=\"submit\"]")).click();
 		  Assert.assertTrue(true);
+		  if(false!=true) {
+			  i++;
+		  }
 	  }
 	  @Test(dependsOnMethods= {"LoginWithinvalidPasswordAndvalidUserName"})
 	  public void LoginWithvalidPasswordAndinvalidUserName() {
@@ -80,6 +92,9 @@ public class AppTest {
 		  driver.findElement(By.cssSelector("#txtPassword")).sendKeys("Krishna@321#");
 		  driver.findElement(By.cssSelector("[type=\"submit\"]")).click();
 		  Assert.assertTrue(true);
+		  if(false!=true) {
+			  i++;
+		  }
 	  }
 	  @Test(dependsOnMethods= {"LoginWithvalidPasswordAndinvalidUserName"})
 	  public void LoginWithvalidPasswordAndvalidUserName() {
@@ -89,11 +104,15 @@ public class AppTest {
 		  driver.findElement(By.cssSelector("#txtPassword")).sendKeys("Krishna@321#");
 		  driver.findElement(By.cssSelector("[type=\"submit\"]")).click();
 		  Assert.assertTrue(true);
+		  if(false!=true) {
+			  i++;
+		  }
 	  }
 
 	@AfterTest
 	public void closePage() {
-
-		//driver.quit();
-	}
+                       if(i>=3) {
+			System.exit(-1);
+		                    }
+			}
 }
