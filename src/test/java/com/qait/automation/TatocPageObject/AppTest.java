@@ -117,7 +117,7 @@ public class AppTest {
 
 	@AfterTest
 	public void closePage() {
-                       if(i>=3) {
+                       if(i>=1) {
 			System.exit(-1);
 		                    }
 			}
