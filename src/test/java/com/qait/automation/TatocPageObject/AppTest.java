@@ -38,6 +38,7 @@ public class AppTest {
 
 	 @Test
 	  public void LoginWithNullPasswordAndNullUserName() {
+		    driver.findElement(By.xpath("//*[contains(text(),\"Login Panel\")]")).click();
 		  driver.findElement(By.cssSelector("#txtUserName")).clear();
 		  driver.findElement(By.cssSelector("#txtUserName")).sendKeys("");
 		  driver.findElement(By.cssSelector("#txtPassword")).clear();
