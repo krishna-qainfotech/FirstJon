@@ -51,6 +51,7 @@ public class AppTest {
 	  }
 	  @Test(dependsOnMethods= {"LoginWithNullPasswordAndNullUserName"})
 	  public void LoginWithNullPasswordAndValidUserName() {
+		    driver.findElement(By.xpath("//*[contains(text(),\"Login Panel\")]")).click();
 		  driver.findElement(By.cssSelector("#txtUserName")).clear();
 		  driver.findElement(By.cssSelector("#txtUserName")).sendKeys("Krishnachauhan");
 		  driver.findElement(By.cssSelector("#txtPassword")).clear();
@@ -63,6 +64,7 @@ public class AppTest {
 	  }
 	  @Test(dependsOnMethods= {"LoginWithNullPasswordAndValidUserName"})
 	  public void LoginWithValidPasswordAndNullUserName() {
+		    driver.findElement(By.xpath("//*[contains(text(),\"Login Panel\")]")).click();
 		  driver.findElement(By.cssSelector("#txtUserName")).clear();
 		  driver.findElement(By.cssSelector("#txtUserName")).sendKeys("");
 		  driver.findElement(By.cssSelector("#txtPassword")).clear();
@@ -75,6 +77,7 @@ public class AppTest {
 	  }
 	  @Test(dependsOnMethods= {"LoginWithValidPasswordAndNullUserName"})
 	  public void LoginWithinvalidPasswordAndvalidUserName() {
+		    driver.findElement(By.xpath("//*[contains(text(),\"Login Panel\")]")).click();
 		  driver.findElement(By.cssSelector("#txtUserName")).clear();
 		  driver.findElement(By.cssSelector("#txtUserName")).sendKeys("krishnachauhan");
 		  driver.findElement(By.cssSelector("#txtPassword")).clear();
@@ -87,6 +90,7 @@ public class AppTest {
 	  }
 	  @Test(dependsOnMethods= {"LoginWithinvalidPasswordAndvalidUserName"})
 	  public void LoginWithvalidPasswordAndinvalidUserName() {
+		    driver.findElement(By.xpath("//*[contains(text(),\"Login Panel\")]")).click();
 		  driver.findElement(By.cssSelector("#txtUserName")).clear();
 		  driver.findElement(By.cssSelector("#txtUserName")).sendKeys("krshnacuahn");
 		  driver.findElement(By.cssSelector("#txtPassword")).clear();
@@ -99,6 +103,7 @@ public class AppTest {
 	  }
 	  @Test(dependsOnMethods= {"LoginWithvalidPasswordAndinvalidUserName"})
 	  public void LoginWithvalidPasswordAndvalidUserName() {
+		    driver.findElement(By.xpath("//*[contains(text(),\"Login Panel\")]")).click();
 		  driver.findElement(By.cssSelector("#txtUserName")).clear();
 		  driver.findElement(By.cssSelector("#txtUserName")).sendKeys("krishnachauhan");
 		  driver.findElement(By.cssSelector("#txtPassword")).clear();
